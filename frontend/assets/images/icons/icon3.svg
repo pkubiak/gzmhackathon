@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="111px" height="111px" viewBox="0 0 111 111" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 8icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="27.4998238%" y1="105.158772%" x2="72.1276733%" y2="-7.61430994%" id="linearGradient-1">
+            <stop stop-color="#00C475" offset="0%"></stop>
+            <stop stop-color="#009A75" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-1045.000000, -3411.000000)">
+            <g id="Group-8" transform="translate(1046.000000, 3412.000000)">
+                <circle id="Oval-3-Copy-2" stroke="url(#linearGradient-1)" stroke-width="2" fill="#FFFFFF" cx="54.5" cy="54.5" r="54.5"></circle>
+                <g id="ico-03" transform="translate(26.000000, 24.000000)">
+                    <g id="Group">
+                        <path d="M19.396,4.325 C8.321,8.053 0.346,18.516 0.346,30.847 C0.346,45.175 11.116,57.166 25,58.815" id="Shape" stroke="#00C475" stroke-width="2"></path>
+                        <polygon id="Shape" fill="#00C475" fill-rule="nonzero" points="17.34 0.84 25 3.063 19.245 8.587"></polygon>
+                    </g>
+                    <g id="Group" transform="translate(32.000000, 3.000000)">
+                        <path d="M5.938,54.676 C17.012,50.947 24.988,40.485 24.988,28.154 C24.988,13.826 14.218,1.835 0.334,0.186" id="Shape" stroke="#00C475" stroke-width="2"></path>
+                        <polygon id="Shape" fill="#00C475" fill-rule="nonzero" points="7.994 58.159 0.334 55.937 6.089 50.413"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

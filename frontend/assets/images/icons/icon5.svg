@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="111px" height="111px" viewBox="0 0 111 111" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 5icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="27.4998238%" y1="105.158772%" x2="72.1276733%" y2="-7.61430994%" id="linearGradient-1">
+            <stop stop-color="#00C475" offset="0%"></stop>
+            <stop stop-color="#009A75" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-459.000000, -3673.000000)">
+            <g id="Group-5" transform="translate(460.000000, 3674.000000)">
+                <circle id="Oval-3-Copy-4" stroke="url(#linearGradient-1)" stroke-width="2" fill="#FFFFFF" cx="54.5" cy="54.5" r="54.5"></circle>
+                <g id="ico-05" transform="translate(28.000000, 28.000000)">
+                    <circle id="Oval" stroke="#00C475" stroke-width="2" cx="4.929" cy="49.821" r="4.679"></circle>
+                    <g id="Group" transform="translate(8.000000, 15.000000)">
+                        <path d="M0.474,31.773 L27.682,4.133" id="Shape" stroke="#00C475" stroke-width="2"></path>
+                        <polygon id="Shape" fill="#00C475" fill-rule="nonzero" points="29.706 7.763 31.709 0.042 24.021 2.167"></polygon>
+                    </g>
+                    <path d="M41.75,0.75 L54,13" id="Shape" stroke="#00C475" stroke-width="2"></path>
+                    <path d="M54,0.75 L41.75,13" id="Shape" stroke="#00C475" stroke-width="2"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

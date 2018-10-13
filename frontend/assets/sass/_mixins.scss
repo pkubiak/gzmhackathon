@@ -1,0 +1,118 @@
+@mixin responsiveContainers($layout-width, $container-width) {
+    .block {
+        .container {
+            width: $layout-width;
+        }
+        &.left, &.right {
+            .container {
+                width: $container-width;
+            }
+        }
+    }
+}
+
+@mixin responsiveBlocks($full-width, $half-width) {
+    .block {
+        width: $full-width;
+    }
+    .block.left, .block.right {
+        width: $half-width;
+    }
+}
+
+@mixin box-shadow($x,$y,$blur, $spread, $color) {
+    box-shadow: #{$x}px #{$y}px #{$blur}px #{$spread}px $color;
+    -webkit-box-shadow: #{$x}px #{$y}px #{$blur}px #{$spread}px $color;
+    -moz-box-shadow: #{$x}px #{$y}px #{$blur}px #{$spread}px $color;
+    -o-box-shadow: #{$x}px #{$y}px #{$blur}px #{$spread}px $color;
+}
+
+@mixin linearGradient($colorleft,$colorright){
+    background: $colorleft; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, $colorleft,$colorright); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, $colorleft,$colorright); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, $colorleft,$colorright); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, $colorleft,$colorright); /* Standard syntax */
+}
+
+@mixin linearGradientWithAngle($angle, $colorleft,$colorright){
+    background: $colorleft; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient($angle, $colorleft,$colorright); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient($angle, $colorleft,$colorright); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient($angle, $colorleft,$colorright); /* For Firefox 3.6 to 15 */
+    background: linear-gradient($angle, $colorleft,$colorright); /* Standard syntax */
+}
+
+@mixin size($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin fontLines($font, $line) {
+    font-size: $font;
+    line-height: $line;
+}
+
+@mixin border-radius($radius) {
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -o-border-radius: $radius;
+}
+
+@mixin transform($x) {
+    transform: $x;
+    -webkit-transform: $x;
+    -moz-transform: $x;
+    -o-transform: $x;
+}
+
+@mixin transition($x, $y) {
+    transition: $x $y;
+    -webkit-transition: $x $y;
+    -moz-transition: $x $y;
+    -o-transition: $x $y;
+}
+
+@mixin absolute($top,$right,$bottom,$left) {
+    position: absolute;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin fixed($top,$right,$bottom,$left) {
+    position: fixed;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin bg-char($posx,$posy,$rep,$size){
+    background-position: $posx $posy;
+    background-repeat: $rep;
+    background-size: $size;
+}
+
+@mixin material-shadow {
+    box-shadow: 0 2px 6px rgba(#000, 0.3);
+    -webkit-box-shadow: 0 2px 6px rgba(#000, 0.3);
+    -moz-box-shadow: 0 2px 6px rgba(#000, 0.3);
+    -o-box-shadow: 0 2px 6px rgba(#000, 0.3);
+}
+
+@mixin material-shadow-lower {
+    box-shadow: 0 1px 4px rgba(#000, 0.5);
+    -webkit-box-shadow: 0 1px 4px rgba(#000, 0.5);
+    -moz-box-shadow: 0 1px 4px rgba(#000, 0.5);
+    -o-box-shadow: 0 1px 4px rgba(#000, 0.5);
+}
+
+@mixin material-shadow-higher {
+    box-shadow: 0 4px 8px rgba(#000, 0.2);
+    -webkit-box-shadow: 0 4px 8px rgba(#000, 0.2);
+    -moz-box-shadow: 0 4px 8px rgba(#000, 0.2);
+    -o-box-shadow: 0 4px 8px rgba(#000, 0.2);
+}

@@ -1,0 +1,55 @@
+// BASE
+@import "variables";
+
+// TOOLS
+@import "mixins";
+
+// SITE STYLES
+@import "grid";
+@import "layout";
+
+@import "colors";
+@import "fonts";
+@import "components";
+
+body {
+    background-color: #FBFBFB;
+    padding-top: 80px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    @include material-shadow();
+    z-index: 100;
+    background-color: white;
+}
+
+ul.lines-list {
+    list-style: none;
+    padding: 0;
+}
+
+.line-block {
+    @include material-shadow-higher();
+    margin-bottom: 40px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: block;
+    @include transition(0.2s,ease-in);
+    text-decoration: none;
+    color: darkgrey;
+    text-align: center;
+    &:hover {
+        @include material-shadow-lower();
+        color: black;
+    }
+}
+
+.line-block-template {
+    display: none;
+}

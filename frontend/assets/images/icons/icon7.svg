@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="111px" height="111px" viewBox="0 0 111 111" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="27.4998238%" y1="105.158772%" x2="72.1276733%" y2="-7.61430994%" id="linearGradient-1">
+            <stop stop-color="#00C475" offset="0%"></stop>
+            <stop stop-color="#009A75" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-1046.000000, -3673.000000)" stroke-width="2">
+            <g id="Group-3" transform="translate(1047.000000, 3674.000000)">
+                <circle id="Oval-3-Copy-5" stroke="url(#linearGradient-1)" fill="#FFFFFF" cx="54.5" cy="54.5" r="54.5"></circle>
+                <g id="ico-08" transform="translate(25.000000, 33.000000)" stroke="#00C475">
+                    <path d="M57,39.722 C57,42.085 55.085,44 52.722,44 L5.278,44 C2.915,44 1,42.085 1,39.722 L1,24.278 C1,21.915 2.915,20 5.278,20 L52.721,20 C55.085,20 57,21.915 57,24.278 L57,39.722 Z" id="Shape"></path>
+                    <path d="M30,28 L8,28" id="Shape"></path>
+                    <path d="M8,36 L30,36" id="Shape"></path>
+                    <path d="M49,31 C49,32.657 47.657,34 46,34 C44.343,34 43,32.657 43,31 C43,29.343 44.343,28 46,28 C47.657,28 49,29.343 49,31 Z" id="Shape"></path>
+                    <path d="M27,3 L0,3" id="Shape"></path>
+                    <path d="M29,20 L29,5" id="Shape"></path>
+                    <path d="M58,3 L31,3" id="Shape"></path>
+                    <circle id="Oval" cx="29" cy="3" r="2.375"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

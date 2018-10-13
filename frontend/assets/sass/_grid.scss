@@ -1,0 +1,142 @@
+//GRID GENERATOR FUNCTIONS
+@function get($list,$num) {
+    @return nth($list,$num);
+}
+@function first($list) {
+    @return nth($list,1);
+}
+@function last($list) {
+    @return nth($list,length($list));
+}
+
+//TEMPLATE GRID GENERATOR (DESKTOP FIRST SCHEME)
+
+//****************************************// CONFIG HERE //****************************************//
+//don't change variables' names! adjust only values
+$starting-width       : 320px;                                              // max width of the layout
+$ending-width         : 1920px;                                              // min width of the layout
+$breakpoints          : 320px, 480px, 768px, 1024px, 1280px, 1440px, 1600px;        // last one won't be used in loop -> rule for
+$main-container-sizes : 100%,  100%,  100%,  100%, 1200px, 1366px, 1440px;
+$gaps-sizes           : 12px,   12px,  20px,  30px,   40px,   40px,   50px;
+$size-labels          : 'xs',  'sm',  'md',   'lg',  'xl',    'xxl',  'xxxl';
+$main-container-class : 'main-container';
+$row-class            : 'column-row';
+$columns              : 12;
+$column-class         : 'col';
+$hidden-class         : 'hide';
+$showed-class         : 'show';
+$offset-class         : 'off';
+$no-offset-class      : 'noff';
+$breaks               : length($main-container-sizes);
+//*************************************************************************************************//
+
+html, body {
+    padding: 0;
+    margin: 0;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.clearfix{
+    &:before{
+        display: table;
+        content: '';
+    }
+    &:after{
+        display: table;
+        content: '';
+        clear: both;
+    }
+}
+
+.centered-block {
+    display: block;
+    margin: 0 auto;
+}
+
+//grid classes
+.#{$main-container-class}{
+    position: relative;
+    min-width: $starting-width;
+    max-width: $ending-width;
+    box-sizing: border-box;
+    @extend .centered-block;
+    @extend .clearfix;
+}
+[class^="#{$column-class}-"], [class*="#{$column-class}-"]{
+    position: relative;
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    @extend .clearfix;
+}
+.#{$hidden-class}{
+    display: none;
+}
+.#{$showed-class}{
+    display: block;
+}
+@for $i from 1 through $columns{
+    .#{$column-class}-#{$i}{
+        width: $i * (100% / $columns);
+    }
+    .#{$offset-class}-#{$i}{
+        margin-left: $i * (100% / $columns);
+    }
+}
+@media (max-width: $starting-width) {
+    .#{$main-container-class} {
+        width: 100%;
+    }
+    [class^="#{$column-class}-"], [class*="#{$column-class}-"]{
+        width: 100%;
+    }
+}
+@for $i from 1 through $breaks{
+    $breakpoint   : get($breakpoints,$i);
+    $sizelabel    : get($size-labels,$i);
+    $maincontsize : get($main-container-sizes,$i);
+    $gapsize      : get($gaps-sizes,$i);
+    @media (min-width: $breakpoint){
+        //layout scalling
+        .#{$main-container-class}{
+            //width: 100%;
+            width: $maincontsize;
+            padding: 0 $gapsize/2;
+        }
+        //offsets and no-offsets
+        .#{$no-offset-class}-#{$sizelabel}{
+            margin-left: 0;
+        }
+        ////hiding
+        .#{$hidden-class}-#{$sizelabel}{
+            display: none;
+        }
+        .#{$showed-class}-#{$sizelabel}{
+            display: block;
+        }
+        //column widths
+        [class^="#{$column-class}-"], [class*="#{$column-class}-"], .team-member{
+            padding: 0 $gapsize/2;
+        }
+        @for $j from 1 through $columns{
+            .#{$column-class}-#{$sizelabel}-#{$j}{
+                width: ($j / $columns) * 100%;
+                //width: $j * ($maincontsize / $columns);
+                padding: 0 $gapsize/2;
+            }
+        }
+        //offset widths
+        @for $j from 1 through $columns{
+            .#{$offset-class}-#{$sizelabel}-#{$j}{
+                //margin-left: $j * ($maincontsize / $columns);
+                margin-left: $j * ($maincontsize / $columns);
+            }
+        }
+        .#{$row-class}{
+            margin-left: -$gapsize/2;
+            margin-right: -$gapsize/2;
+            width: unset;
+        }
+    }
+}
